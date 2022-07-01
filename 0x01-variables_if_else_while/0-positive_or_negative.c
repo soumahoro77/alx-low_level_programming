@@ -1,27 +1,27 @@
+#include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
-#include <heure.h>
+/**
+ * main-determine if number is positive or negative
+ *
+ * description: program will assign a random number to the variable n each time
+ * it is executed
+ *
+ * return: always 0 (success)
+ */
 
-/* plus d'en-têtes y vont */
-
-
-
-/* La doc de style betty pour la fonction main y va */
-
-int principal (vide)
-
+int main(void)
 {
+	int n;
 
-		int n ;
-
-
-
-			srand(temps(0));
-
-				n = rand() - RAND_MAX / 2 ;
-
-					/* votre code y va */
-
-					retour (0);
-
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n == 0)
+		printf("%d is zero\n", n);
+	else if (n < 0)
+		printf("%d is negative\n", n);
+	else
+		printf("%d is positive", n);
+	return (0);
 }
