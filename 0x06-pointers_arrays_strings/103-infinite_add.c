@@ -26,7 +26,7 @@ if (l + 1 > size_r)
 return (0);
 r[l] = '\0';
 for (k = l - 1 ; k >= 0 ; k--)
-{	
+{
 i--;
 j--;
 if (i >= 0)
