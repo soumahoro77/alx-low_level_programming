@@ -2,7 +2,7 @@
 int _divider(int x, int n);
 /**
  * is_prime_number - Returns 0 on none prime, 1 on prime number..
- *  
+ *
  * @n: is a pointer to an int.
  *
  * Return: Returns the result.
